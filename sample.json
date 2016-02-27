@@ -1,0 +1,16 @@
+{
+	"characters": [
+	{
+		"name": "猪狩守",
+			"rarity": "sr",
+			"before_events": 0,
+			"after_events": 4
+	},
+	{
+		"name": "猪狩進",
+		"rarity": "sr",
+		"before_events": 5,
+		"after_events": 0
+	}
+	]
+}
