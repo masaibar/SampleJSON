@@ -23,6 +23,8 @@ import javax.net.ssl.HttpsURLConnection;
 public class MainActivity extends AppCompatActivity {
 
     private static final String URL_JSON = "https://raw.githubusercontent.com/masaibar/SampleJSON/master/sample.json";
+//    private static final String URL_JSON = "https://raw.githubusercontent.com/masaibar/SampleJSON/master/sample1.json";
+//    private static final String URL_JSON = "https://raw.githubusercontent.com/masaibar/SampleJSON/master/sample2.json";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
