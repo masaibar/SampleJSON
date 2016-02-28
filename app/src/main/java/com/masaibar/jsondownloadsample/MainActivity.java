@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+
 import org.apache.http.client.HttpClient;
 
 import java.io.BufferedReader;
@@ -22,8 +24,8 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String URL_JSON = "https://raw.githubusercontent.com/masaibar/SampleJSON/master/sample.json";
-//    private static final String URL_JSON = "https://raw.githubusercontent.com/masaibar/SampleJSON/master/sample1.json";
+//    private static final String URL_JSON = "https://raw.githubusercontent.com/masaibar/SampleJSON/master/sample.json";
+    private static final String URL_JSON = "https://raw.githubusercontent.com/masaibar/SampleJSON/master/test.json";
 //    private static final String URL_JSON = "https://raw.githubusercontent.com/masaibar/SampleJSON/master/sample2.json";
 
     @Override
@@ -78,6 +80,14 @@ public class MainActivity extends AppCompatActivity {
 
             TextView textView = (TextView) mActivity.findViewById(R.id.text_result);
             textView.setText(result);
+
+            /**gson test**/
+            Gson gson = new Gson();
+            Hoge hoge = gson.fromJson(result, Hoge.class);
+
+            TextView textView1 = (TextView) mActivity.findViewById(R.id.text_hoge);
+            textView1.setText(hoge.getHoge());
+            /**gson test**/
         }
 
         private String readStream(InputStream inputStream) {

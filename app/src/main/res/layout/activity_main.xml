@@ -22,4 +22,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="get json"/>
+
+    <TextView
+        android:id="@+id/text_hoge"
+        android:text="+++++"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
